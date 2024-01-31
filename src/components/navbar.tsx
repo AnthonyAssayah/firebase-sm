@@ -21,9 +21,9 @@ export const Navbar = () => {
             <div className='user'>
                 {user && (
                 <>
-                    <p style={{ marginRight: '10px' }}>{user?.displayName}</p>
-                    <img src={user?.photoURL || ''} width="30" height="30" />
-                    <button onClick={signUserOut}>Log Out</button>
+                    <p>{user?.displayName}</p>
+                    <img src={user?.photoURL || ''} width="34" height="34" />
+                    <button className='logoutButton' onClick={signUserOut}>Log Out</button>
                 </>
                 )}
             </div>
